@@ -417,3 +417,12 @@ body.dark .col-info p{
 body.dark .hamburger .bar {
     background-color: white;
 }
+
+
+body.dark  .social-links a i:hover{
+    color: white;
+}
+
+.social-links a i:hover{
+    color: orangered;
+}
