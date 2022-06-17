@@ -340,9 +340,10 @@ nav{
 .searchField input{
     height: 100%;
     width: 100%;
-    outline: none;
+    outline:  1px solid rgb(1, 1, 1);
     padding: 5px;
     border: none;
+    border-radius: 5px;
 }
 .searchField i {
     position: absolute;
@@ -353,10 +354,10 @@ nav{
 .searchField::before{
     content: "";
     position: absolute;
-    height: 10px;
-    width: 10px;
-    background-color: orangered;
-    right: 14px;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(8, 8, 8);
+    right: 12px;
     top: -8px;
     transform: rotate(45deg);
     z-index: -1;
@@ -367,14 +368,24 @@ nav{
     pointer-events: auto;
     z-index: 1;
 }
+.searchField input::placeholder{
+    font-size: 15px;
+}
 
 body.dark .searchField input{
     background: linear-gradient(to right,orange,red);
+    outline: 1px solid white;
 
     color: white;
 }
 body.dark .searchField input::placeholder {
     color: white;
+    font-size: 15px;
+    
+}
+body.dark .searchField::before{
+    background-color: white;
+
 }
 
 body.dark .darkLight i,
@@ -438,5 +449,7 @@ body.dark .searchBar .searchToggle i{
     color: orangered;
 }
 
-
+body.dark .links li a:hover{
+    color: orangered;
+}
 
