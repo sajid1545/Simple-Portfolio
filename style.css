@@ -430,4 +430,13 @@ body.dark .links li a{
     color: white;
 }
 
+.searchBar .searchToggle i{
+    color: black;
+}
+
+body.dark .searchBar .searchToggle i{
+    color: orangered;
+}
+
+
 
