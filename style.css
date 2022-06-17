@@ -420,9 +420,17 @@ body.dark .hamburger .bar {
 
 
 body.dark  .social-links a i:hover{
+    color: orangered;
+}
+
+body.dark  .social-links a i{
     color: white;
 }
 
 .social-links a i:hover{
     color: orangered;
+}
+
+body.dark .links li a{
+    color: white;
 }
